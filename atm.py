@@ -26,8 +26,8 @@ while True: # 조건이 True면 계속 작동합니다.
 
         if withdraw_amount > balance:
             print('잔액이 부족합니다.')
-        else:
-            balance -= withdraw_amount #결과를 별도의 저장공간에 담아줘
+        # 출금이 가능하다면
+        if withdraw_amount <= balance:
             print(f'출금하신 금액은 {withdraw_amount}원입니다. 현재 잔액은 {balance}원입니다.')
 
 
